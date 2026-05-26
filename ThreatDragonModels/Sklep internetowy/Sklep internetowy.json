@@ -95,6 +95,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -178,7 +179,6 @@
               ]
             },
             "id": "793bb62c-16ad-4afb-93eb-d050a8665872",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Aplikacja fronthand",
@@ -250,6 +250,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -333,7 +334,6 @@
               ]
             },
             "id": "06fe0783-536a-474d-853c-ca0467197735",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Aplikacja backhand",
@@ -405,6 +405,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -488,7 +489,6 @@
               ]
             },
             "id": "4f3441ad-cd3f-4f5c-8859-b20e3334c48d",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Użytkownik",
@@ -1043,7 +1043,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "login request",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1057,17 +1057,23 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "login request"
             ],
             "id": "4d638754-0f98-4244-adee-41c4e9d7f6f4",
             "source": {
-              "x": 1199,
-              "y": -25
+              "x": 1219,
+              "y": 95
             },
             "target": {
-              "x": 1299,
-              "y": 75
-            }
+              "cell": "f349fee1-1356-45a4-a39e-1404a10f5679",
+              "port": "0b9fab5e-707a-431b-b51e-fc861429175c"
+            },
+            "vertices": [
+              {
+                "x": 1319,
+                "y": 195
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1089,7 +1095,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "login response",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1103,17 +1109,23 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "login response"
             ],
-            "id": "05e236a4-afa5-46ed-b4c6-83e4c9567243",
+            "id": "a02a062c-a72e-4adb-8998-739802123d2b",
             "source": {
-              "x": 1170,
-              "y": -30
+              "x": 1415,
+              "y": -180
             },
             "target": {
-              "x": 1270,
-              "y": 70
-            }
+              "x": 1220,
+              "y": 10
+            },
+            "vertices": [
+              {
+                "x": 1320,
+                "y": -90
+              }
+            ]
           },
           {
             "position": {
@@ -1141,6 +1153,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1224,7 +1237,6 @@
               ]
             },
             "id": "ac01bcf7-9c77-42d7-a975-ce04db75bcf1",
-            "zIndex": 11,
             "data": {
               "type": "tm.Store",
               "name": "Baza danych użytkownika",
@@ -1295,6 +1307,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1378,7 +1391,6 @@
               ]
             },
             "id": "44ca0cb9-3109-4f41-9173-a8807ba58554",
-            "zIndex": 12,
             "data": {
               "type": "tm.Actor",
               "name": "użytkownik",
@@ -1393,8 +1405,8 @@
           },
           {
             "position": {
-              "x": 1090,
-              "y": -30
+              "x": 1070,
+              "y": 0
             },
             "size": {
               "width": 180,
@@ -1412,6 +1424,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1495,7 +1508,6 @@
               ]
             },
             "id": "ed013446-fd97-424f-9458-3850599a9ed5",
-            "zIndex": 13,
             "data": {
               "type": "tm.Process",
               "name": "Przeglądarka",
@@ -1532,6 +1544,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1615,7 +1628,6 @@
               ]
             },
             "id": "f349fee1-1356-45a4-a39e-1404a10f5679",
-            "zIndex": 14,
             "data": {
               "type": "tm.Process",
               "name": "aplikacja fronthand",
@@ -1652,6 +1664,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1735,7 +1748,6 @@
               ]
             },
             "id": "ad7e6b50-c4bd-4293-a22b-a80a7259f514",
-            "zIndex": 15,
             "data": {
               "type": "tm.Process",
               "name": "aplikacja backhand",
@@ -1775,6 +1787,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -1858,7 +1871,6 @@
               ]
             },
             "id": "198df00a-2f9d-40ea-94e1-20b84490d621",
-            "zIndex": 16,
             "data": {
               "type": "tm.Store",
               "name": "baza danych",
